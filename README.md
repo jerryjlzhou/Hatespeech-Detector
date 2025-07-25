@@ -1,5 +1,5 @@
 # Hatespeech-Detector
-
+[Report Doc]([https://www.genome.gov/](https://docs.google.com/document/d/1J-bV2ESFtu3zjjpIabKhCD_pXtCT_vyP9_YbnlqTB4A/edit?usp=sharing))
 
 ## Options for implementation
 
