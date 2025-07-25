@@ -1,5 +1,5 @@
 <p align='center'>
-<img src="https://cdn-icons-png.flaticon.com/512/3100/3100333.png " width="75" />
+<img src="https://cdn-icons-png.flaticon.com/512/3100/3100333.png" width="75" />
 </p>
 <h1 align='center'>COMP9444 Group Project</h1>
 <h2 align='center'>
