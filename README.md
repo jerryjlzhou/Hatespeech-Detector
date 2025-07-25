@@ -5,7 +5,7 @@
 
 ### First Model (No-context)
 - All mini
-- Idf + SVM
+- TF-IDF + SVM
 
 ### Second Model (handles context edge cases)
 - Bert
