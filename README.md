@@ -1,5 +1,5 @@
 <p align='center'>
-    <img src="   https://cdn-icons-png.flaticon.com/512/3100/3100333.png " width="75" />
+<img src="https://cdn-icons-png.flaticon.com/512/3100/3100333.png " width="75" />
 </p>
 <h1 align='center'>COMP9444 Group Project</h1>
 <h2 align='center'>
@@ -21,6 +21,7 @@ Multi-Class Hate Speech and Offensive Language Detection in Social Media (026)
 
 ### Utils
 - Split Dataset (Jerry)
+- Dataset Extraction (Those outside of Kaggle etc.)
 
 ### Questions to be answered
 - How do we plug all of these together?
