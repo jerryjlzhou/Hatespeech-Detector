@@ -19,7 +19,7 @@ Each CSV contains the following columns:
 * **targets** (List[string]): list of targets mentioned (empty if none)
 
 **Example format:**
-![alt text](image-2.png)
+![alt text](/data/processed/example.png)
 
 ### Loading the data
 ```python
