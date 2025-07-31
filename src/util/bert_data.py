@@ -15,8 +15,8 @@ class BertData(Dataset):
 		text = self.data.loc[idx, "text"]
 		label = self.data.loc[idx, "label_id"]
 
-		encoded = self.tokenizer(text, return_tensors='pt')
-		item = {key: val.squeeze(0) for key, value in encoded.items()}
+		encoded = self.tokenizer(text, padding='max_length', return_tensors='pt')
+		item = {key: val.squeeze(0) for key, val in encoded.items()}
 		item['labels'] = torch.tensor(label)
 
 		return item
