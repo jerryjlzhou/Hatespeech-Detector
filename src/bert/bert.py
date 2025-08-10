@@ -2,13 +2,13 @@ import torch
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
 def bert(text):
-    model = AutoModelForSequenceClassification.from_pretrained("sentence-transformers/all-MiniLM-L12-v2", num_labels=3)
-    model.load_state_dict(torch.load("src/bert/saved/bert_finetuned.pt"))
+    model = AutoModelForSequenceClassification.from_pretrained("bert-base-uncased", num_labels=3)
+    model.load_state_dict(torch.load("src/bert/saved/best_model.pt"))
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model.to(device)
     model.eval()
 
-    tokenizer = AutoTokenizer.from_pretrained("sentence-transformers/all-MiniLM-L12-v2")
+    tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
     inputs = tokenizer(text, return_tensors="pt")
     input_ids = inputs["input_ids"].to(device)
     attention_mask = inputs["attention_mask"].to(device)
@@ -26,4 +26,4 @@ def bert(text):
     elif predicted_class == 2:
         print("Hatespeech")
 
-bert(content)
+bert("Noah Knigga")
