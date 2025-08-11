@@ -1,4 +1,8 @@
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch
+
 requests
 pandas
-bs4
+beautifulsoup4
 numpy
+transformers
